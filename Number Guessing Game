@@ -1,0 +1,19 @@
+import random
+
+numbers = [5, 12, 25, 37, 48, 59, 63, 72, 84, 91]
+original_number = random.choice(numbers)
+
+print("Welcome to the Quiz Guessing Game!")
+print("Guess the number from this list:")
+print(numbers)
+
+while True:
+    guess = int(input("Enter your guess: "))
+    
+    if guess > original_number:
+        print("Too high! Try again.")
+    elif guess < original_number:
+        print("Too low! Try again.")
+    else:
+        print("Correct! You win!")
+        break
