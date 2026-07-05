@@ -10,9 +10,10 @@ print("STACK FRAME VISUALIZER")
 print("================================")
 
 
-# --------------------------------
+# ------------------------------------------------
 # PART 1 - LINEAR RECURSION
-# --------------------------------
+# ------------------------------------------------
+# Linear recursion makes one recursive call at each level.
 
 def linear_recursion(n):
     if n == 0:
@@ -26,9 +27,11 @@ print("\nPART 1: Linear Recursion")
 linear_recursion(5)
 
 
-# --------------------------------
+# ------------------------------------------------
 # PART 2 - TAIL RECURSION
-# --------------------------------
+# ------------------------------------------------
+# Tail recursion does the work first.
+# The recursive call is the last step.
 
 def tail_recursion(n):
     if n == 0:
@@ -42,9 +45,11 @@ print("\nPART 2: Tail Recursion")
 tail_recursion(5)
 
 
-# --------------------------------
+# ------------------------------------------------
 # PART 3 - HEAD RECURSION
-# --------------------------------
+# ------------------------------------------------
+# Head recursion calls itself first.
+# The work happens while the call stack unwinds.
 
 def head_recursion(n):
     if n == 0:
@@ -58,9 +63,10 @@ print("\nPART 3: Head Recursion")
 head_recursion(5)
 
 
-# --------------------------------
+# ------------------------------------------------
 # PART 4 - INCREASING-DECREASING RECURSION
-# --------------------------------
+# ------------------------------------------------
+# This prints while going down and again while coming back.
 
 def increasing_decreasing(n):
     if n == 0:
@@ -75,9 +81,10 @@ print("\nPART 4: Increasing-Decreasing Recursion")
 increasing_decreasing(5)
 
 
-# --------------------------------
+# ------------------------------------------------
 # PART 5 - TREE RECURSION
-# --------------------------------
+# ------------------------------------------------
+# Tree recursion makes more than one recursive call at each level.
 
 def tree_recursion(n):
     if n == 0:
@@ -92,9 +99,7 @@ print("\nPART 5: Tree Recursion")
 tree_recursion(3)
 
 
-# --------------------------------
 # FINAL SUMMARY
-# --------------------------------
 
 print("\n================================")
 print("RECURSION PATTERN SUMMARY")
